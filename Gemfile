@@ -35,6 +35,12 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# dotenv to keep credentials masked in production
+gem 'dotenv-rails', groups: [:development, :test]
+
+#http client gem to pull birdseye data
+gem 'faraday', '~> 0.9.2'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
