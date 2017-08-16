@@ -1,1 +1,22 @@
-<%=@data%>
+<% @parsed_data.each do |review| %>
+
+  <p>Rating: <%=review['rating']%></p>
+  <p>Comments: <%=review['comments']%></p>
+  <p>Title: <%=review['title']%></p>
+  <p>Reviewer: </p>
+   <p><%=review['reviewer']['firstName'] + ' ' + review['reviewer']['lastName']%></p>
+   <p><%=review['reviewer']['nickName'] %></p>
+   <img src=<%=review['reviewer']['thumbnailUrl'] %>/>
+   <p><%=review['reviewer']['emailId'] %></p>
+   <p><%=review['reviewer']['facebookId'] %></p>
+   <p><%=review['reviewer']['city'] %></p>
+   <p><%=review['reviewer']['state'] %></p>
+
+  <p>ReviewURL: <%=review['reviewURL']%></p>
+  <p>sourceType: <%=review['sourceType']%></p>
+  <p>reviewDate: <%=review['reviewDate']%></p>
+  <p>response: <%=review['response']%></p>
+  <p>responseDate: <%=review['responseDate']%></p>
+  <p>featured: <%=review['featured']%></p>
+
+<%end%>

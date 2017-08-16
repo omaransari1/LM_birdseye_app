@@ -9,7 +9,9 @@ class ReviewsController < ApplicationController
 
     response = conn.post "/resources/v1/review/businessId/149440583942847?sindex=0&count=10&api_key=#{ENV['API_KEY']}"
     @data = response.body
-    
+
+    @parsed_data = JSON.parse @data
+
     render 'pullandshow'
   end
 
