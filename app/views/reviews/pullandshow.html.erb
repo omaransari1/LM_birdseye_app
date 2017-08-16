@@ -1,5 +1,6 @@
 <% @parsed_data.each do |review| %>
-
+  
+  <p>ReviewID: <%=review['reviewId']%></p>
   <p>Rating: <%=review['rating']%></p>
   <p>Comments: <%=review['comments']%></p>
   <p>Title: <%=review['title']%></p>
