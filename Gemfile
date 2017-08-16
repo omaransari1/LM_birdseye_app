@@ -35,7 +35,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# dotenv to keep credentials masked in production
+# dotenv to keep sensitive credentials masked in github repo
 gem 'dotenv-rails', groups: [:development, :test]
 
 #http client gem to pull birdseye data
