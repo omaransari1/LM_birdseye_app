@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+
   def pullandshow
 
     conn = Faraday.new(:url => 'https://private-anon-d12402341a-birdeye.apiary-mock.com') do |faraday|
@@ -49,6 +50,8 @@ class ReviewsController < ApplicationController
         featured: review['featured']
         )
     end
+
+    redirect_to "/"
 
   end
 
