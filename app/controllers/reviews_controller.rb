@@ -1,6 +1,6 @@
 class ReviewsController < ApplicationController
 
-  def pullandshow
+  def pullandshow  # pull data and display (to test API)
 
     conn = Faraday.new(:url => 'https://private-anon-d12402341a-birdeye.apiary-mock.com') do |faraday|
       faraday.request  :url_encoded             # form-encode POST params
@@ -17,6 +17,7 @@ class ReviewsController < ApplicationController
   end
 
   def save_reviews # execute once
+
     conn = Faraday.new(:url => 'https://private-anon-d12402341a-birdeye.apiary-mock.com') do |faraday|
       faraday.request  :url_encoded             # form-encode POST params
       faraday.response :logger                  # log requests to STDOUT
@@ -52,10 +53,9 @@ class ReviewsController < ApplicationController
     end
 
     redirect_to "/"
-
   end
 
-  def index
+  def index # displays reviews from database
     @reviews = Review.all
 
     render 'index'
