@@ -42,6 +42,8 @@ gem 'dotenv-rails', groups: [:development, :test]
 #http client gem to pull birdseye data
 gem 'faraday', '~> 0.9.2'
 
+gem 'seed_dump'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri

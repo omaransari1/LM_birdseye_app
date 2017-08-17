@@ -1,7 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Review.create!([
+  {review_id: "73748574902", rating: "5", comments: "I am a long time customer and love Dieici. I am there at least once a week. I have never been disappointed with any service. I love all the girls. The customer service is beyond a 10. I also love the new addition Wish to the salon! Wish is a woman's clothing boutique. What could be better...beauty and fashion all in one spot!!! Dieci keeps getting better and better!", title: nil, firstname: "Jennifer", lastname: "Bennett", nickname: nil, thumbnailurl: "http://d2xt3xymj142xp.cloudfront.net/reviewer/9a070cf98f014f5d9b06987dcc9c48fe.jpeg", email_id: "jbennett@gmail.com", facebook_id: "638309687", city: "Cedar Knolls", state: " NJ", reviewurl: "http://www.citysearch.com/biz/dieci-lifestyle-spa-livingston", sourcetype: "citysearch", reviewdate: "Jan 20, 2014", response: "Thanks", responsedate: "Feb 18, 2014", featured: "0"}
+])
