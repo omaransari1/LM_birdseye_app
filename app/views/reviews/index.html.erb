@@ -1,12 +1,13 @@
 <h1 style="text-align:center">Reviews</h1>
 
-<table>
+<div class="table-responsive">
+<table class="table table-hover table-bordered">
   <tr>
     <th>Review ID</th>
     <th>Dates</th>
     <th>Rating</th>
-    <th>Comments</th>
     <th>Title</th>
+    <th>Comments</th>
     <th>Reviewer</th>
     <th>Details</th>
   </tr>
@@ -15,8 +16,8 @@
     <td><%= review.review_id %></td>
     <td>Review: <%= review.reviewdate %><br/>Response: <%= review.responsedate %></td>
     <td><%= review.rating %></td>
-    <td><%= review.comments %></td>
     <td><%= review.title %></td>
+    <td><%= review.comments %></td>
     <td><%= review.firstname %> <%= review.lastname %><br/><%= review.nickname %><br/>
     <img src=<%= review.thumbnailurl %>/><br/><%= review.email_id %><br/><%= review.facebook_id %><br/>
     <%= review.city %> <%= review.state %></td>
@@ -25,3 +26,4 @@
   </tr>
   <%end%>
 </table>
+</div>
