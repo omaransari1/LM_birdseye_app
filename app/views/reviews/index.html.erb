@@ -18,10 +18,10 @@
     <td><%= review.comments %></td>
     <td><%= review.title %></td>
     <td><%= review.firstname %> <%= review.lastname %><br/><%= review.nickname %><br/>
-    <%= review.thumbnailurl %><br/><%= review.email_id %><br/><%= review.facebook_id %><br/>
+    <img src=<%= review.thumbnailurl %>/><br/><%= review.email_id %><br/><%= review.facebook_id %><br/>
     <%= review.city %> <%= review.state %></td>
     <td>Review url: <%= review.reviewurl%><br/>Sourcetype: <%= review.sourcetype %><br/>
-    <%= review.response %><br/><%= review.featured %></td>
+    Response: <%=review.response %><br/>Featured: <%= review.featured %></td>
   </tr>
   <%end%>
 </table>
